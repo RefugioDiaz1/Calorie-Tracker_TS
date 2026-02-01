@@ -75,3 +75,10 @@ export default defineConfig([
 
 
 Se uso para este proyecto el useState, useReduce, 
+
+Se importo una nueva libreria llamada uuid ---> npm i uuid
+
+tambien instale esta otra npm i --save-dev @types/uuid
+
+se agrego para agregar iconos
+npm i @heroicons/react
