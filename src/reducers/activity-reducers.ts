@@ -14,6 +14,9 @@ export type ActivityActions =
     {
         type: 'delete-activity',
         payload: { id: Activity['id'] }
+    } |
+     {
+        type: 'restart-app'
     }
 
 //Definicion del estado del reducer
@@ -89,6 +92,15 @@ export const activityReducer = (
 
         }
 
+    }
+
+    if(action.type === 'restart-app') {
+
+        return {
+            activities: [],
+            activeId:''
+
+        }
     }
 
     // Si la accion no es reconocida, retorna el estado actual sin cambios
