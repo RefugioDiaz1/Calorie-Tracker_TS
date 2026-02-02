@@ -33,7 +33,7 @@ export default function CalorieTracker({activities}:CalorieTrackerProps) {
         />
 
        <CalorieDisplay  
-        calories={caloriesConsumed}
+        calories={caloriesBurned}
         text="Ejercicio"
         />
 
